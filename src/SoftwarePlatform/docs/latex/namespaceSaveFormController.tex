@@ -1,0 +1,26 @@
+\hypertarget{namespaceSaveFormController}{}\doxysection{Save\+Form\+Controller Namespace Reference}
+\label{namespaceSaveFormController}\index{SaveFormController@{SaveFormController}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSaveFormController_1_1SaveError}{Save\+Error}}
+\item 
+class \mbox{\hyperlink{classSaveFormController_1_1SaveFormController}{Save\+Form\+Controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module handles the control of the save result dialog window.
+
+Once the user has received a result from the upload and timing process, they can click the 
+save button which initalises this module. This module configures the user interface of the 
+save result dialog window, and allows the user to save the result to a file, as long as the 
+data being saved matches the format of the log file being saved to.
+
+    Typical usage example:
+
+    saveDialog = SaveFormController()
+    saveDialog.specifyResult(self.timerLabel.text().split(':')[1].lstrip())
+    saveDialog.exec_()
+\end{DoxyVerb}
+ 

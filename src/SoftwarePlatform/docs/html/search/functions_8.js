@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['inituicomponents_0',['initUiComponents',['../classMainController_1_1MainWindow.html#a9fd0ddfd9904ae40d8e19151d58a2f41',1,'MainController.MainWindow.initUiComponents()'],['../classMainResultsTabController_1_1MainResultsTabController.html#a9010a942825f67129432cbdb5f82a563',1,'MainResultsTabController.MainResultsTabController.initUiComponents()'],['../classMainUploadTabController_1_1MainUploadTabController.html#a67db892b8e0b3bef7f297afc8c123bc1',1,'MainUploadTabController.MainUploadTabController.initUiComponents()'],['../classSaveFormController_1_1SaveFormController.html#a8914005b822b22a8c20d955f24654e66',1,'SaveFormController.SaveFormController.initUiComponents()'],['../classUploadDialogController_1_1UploadDialogController.html#abe061fb2c084c9a85e898e316201ebb0',1,'UploadDialogController.UploadDialogController.initUiComponents()']]],
+  ['isfloat_1',['isFloat',['../classMainResultsTabController_1_1MainResultsTabController.html#a9ef9dfecbb55184f89567b451f96369a',1,'MainResultsTabController::MainResultsTabController']]],
+  ['isnoduplicates_2',['isNoDuplicates',['../classMainUploadTabController_1_1MainUploadTabController.html#a7f690b4ef35a6431f473db2731b0821b',1,'MainUploadTabController::MainUploadTabController']]]
+];

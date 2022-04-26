@@ -1,0 +1,25 @@
+\hypertarget{namespaceMainResultsTabController}{}\doxysection{Main\+Results\+Tab\+Controller Namespace Reference}
+\label{namespaceMainResultsTabController}\index{MainResultsTabController@{MainResultsTabController}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMainResultsTabController_1_1LoadError}{Load\+Error}}
+\item 
+class \mbox{\hyperlink{classMainResultsTabController_1_1MainResultsTabController}{Main\+Results\+Tab\+Controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module handles the control of the results tab of the main window.
+
+Once the main window is created, this module is called to initialise the controller of the 
+results tab. The module handles the loading of the user's log files and converts them into 
+matplotlib subplots. When the user attempts to load a log file, this module ensures that the 
+log file is compatible for the rendering of the log file.
+
+    Typical usage example:
+
+    resultsController = MainResultsTabController(self)
+    resultsController.initUiComponents()
+\end{DoxyVerb}
+ 

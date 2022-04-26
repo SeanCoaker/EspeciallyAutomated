@@ -1,0 +1,41 @@
+\hypertarget{classOTAComms}{}\doxysection{OTAComms Class Reference}
+\label{classOTAComms}\index{OTAComms@{OTAComms}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOTAComms_a3f9b442953ebcf6b0a99f136ec15028e}\label{classOTAComms_a3f9b442953ebcf6b0a99f136ec15028e}} 
+{\bfseries OTAComms} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classOTAComms}{OTAComms}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOTAComms_a39e23c72dc0b476ae546b257437f5e74}{init}} (int ota\+Port, const char $\ast$dns\+Name)
+\begin{DoxyCompactList}\small\item\em Initialises the attributes of this class and configures the callback functions to each stage of the over-\/the-\/air update process. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOTAComms_ac19f71d095749aeb8aa232c4e242d8d3}\label{classOTAComms_ac19f71d095749aeb8aa232c4e242d8d3}} 
+void {\bfseries begin} ()
+\begin{DoxyCompactList}\small\item\em Calls for the Arduino\+OTA library to begin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOTAComms_a69bef2e57fc689bb5a7f537cbf41b490}\label{classOTAComms_a69bef2e57fc689bb5a7f537cbf41b490}} 
+void {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em Calls for the Arduino\+OTA library to handle a request for an over-\/the-\/air update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOTAComms_a39e23c72dc0b476ae546b257437f5e74}\label{classOTAComms_a39e23c72dc0b476ae546b257437f5e74}} 
+\index{OTAComms@{OTAComms}!init@{init}}
+\index{init@{init}!OTAComms@{OTAComms}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void OTAComms\+::init (\begin{DoxyParamCaption}\item[{int}]{ota\+Port,  }\item[{const char $\ast$}]{dns\+Name }\end{DoxyParamCaption})}
+
+
+
+Initialises the attributes of this class and configures the callback functions to each stage of the over-\/the-\/air update process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ota\+Port} & The port to be used for over-\/the-\/air updates. \\
+\hline
+{\em dns\+Name} & The hostname to be used for over-\/the-\/air updates. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{OTAComms_8h}{OTAComms.\+h}}\end{DoxyCompactItemize}

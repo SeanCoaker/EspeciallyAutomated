@@ -1,0 +1,31 @@
+\hypertarget{namespaceUploadDialogController}{}\doxysection{Upload\+Dialog\+Controller Namespace Reference}
+\label{namespaceUploadDialogController}\index{UploadDialogController@{UploadDialogController}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUploadDialogController_1_1UploadDialogController}{Upload\+Dialog\+Controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module handles the control of the upload dialog window.
+
+Once the user has selected to upload a sketch, the upload dialog window is opened and this 
+module is initialised to handle the control of the window.
+
+    Typical usage example:
+
+    uploadDialog = UploadDialogController()
+    uploadDialog.setEspIps(espIps)
+    uploadDialog.setEspDevices(espNames)
+    uploadDialog.setIpOfSender(_ui.deviceIpLineEdit.text())
+    uploadDialog.setUdpPort(_ui.udpPortLineEdit.text())
+    uploadDialog.setOtaPort(_ui.otaPortLineEdit.text())
+    uploadDialog.setIsTimed(_ui.testCheckbox.isChecked())
+    uploadDialog.setIsVerbose(_ui.verboseCheckbox.isChecked())
+    uploadDialog.setSketchAndDirectoryPath(_ui.sketchLineEdit.text(), _ui.directoryLineEdit
+                    .text())
+    uploadDialog.startUpload()
+    uploadDialog.exec_()
+\end{DoxyVerb}
+ 

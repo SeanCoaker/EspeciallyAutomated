@@ -1,0 +1,68 @@
+\hypertarget{OTA__LoRa__Sync_8ino}{}\doxysection{OTA\+\_\+\+Lo\+Ra\+\_\+\+Sync.\+ino File Reference}
+\label{OTA__LoRa__Sync_8ino}\index{OTA\_LoRa\_Sync.ino@{OTA\_LoRa\_Sync.ino}}
+
+
+A file that handles all the parts to firefly synchronisation and communication with the software platform.  
+
+
+{\ttfamily \#include \char`\"{}OTAComms.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}UDPHandler.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_acbe2c637c1b86d32538d2f544aa289c3}\label{OTA__LoRa__Sync_8ino_acbe2c637c1b86d32538d2f544aa289c3}} 
+\#define {\bfseries DNS}~\char`\"{}esp3\char`\"{}
+\begin{DoxyCompactList}\small\item\em The DNS name of this Tiny\+PICO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a3780e2fe762dc532df7d0f030b55caa0}\label{OTA__LoRa__Sync_8ino_a3780e2fe762dc532df7d0f030b55caa0}} 
+\#define {\bfseries CS}~5
+\begin{DoxyCompactList}\small\item\em The clock select pin used by the Lo\+Ra module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_aaf46549480a528db5ba7d78e7270b5a9}\label{OTA__LoRa__Sync_8ino_aaf46549480a528db5ba7d78e7270b5a9}} 
+\#define {\bfseries SSID}~\char`\"{}Seans\+\_\+\+Router\char`\"{}
+\begin{DoxyCompactList}\small\item\em The name of the router to connect to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a9e8538fad4eee548302ad9f60e6d47ca}\label{OTA__LoRa__Sync_8ino_a9e8538fad4eee548302ad9f60e6d47ca}} 
+\#define {\bfseries PASSWORD}~\char`\"{}daefa5eb2f\char`\"{}
+\begin{DoxyCompactList}\small\item\em The password of the router to connect to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a7342deb9bd9ebf195e550e2d8e7c38b4}\label{OTA__LoRa__Sync_8ino_a7342deb9bd9ebf195e550e2d8e7c38b4}} 
+\#define {\bfseries UDP\+\_\+\+PORT}~7375
+\begin{DoxyCompactList}\small\item\em The port to use for the UDP connection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a43dc67882a5be5ed6fc21f455dfb4760}\label{OTA__LoRa__Sync_8ino_a43dc67882a5be5ed6fc21f455dfb4760}} 
+\#define {\bfseries OTA\+\_\+\+PORT}~3232
+\begin{DoxyCompactList}\small\item\em The port to use for over-\/the-\/air uploads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{OTA__LoRa__Sync_8ino_a4fc01d736fe50cf5b977f755b675f11d}} 
+void {\bfseries setup} ()
+\begin{DoxyCompactList}\small\item\em The Arduino setup function. This function initialises the Wi\+Fi connection, the UDP connection, the OTA connection, and the \mbox{\hyperlink{classFirefly}{Firefly}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_afe461d27b9c48d5921c00d521181f12f}\label{OTA__LoRa__Sync_8ino_afe461d27b9c48d5921c00d521181f12f}} 
+void {\bfseries loop} ()
+\begin{DoxyCompactList}\small\item\em The Arduino loop function. This function handles requests for over-\/the-\/air uploads, UDP messages and running a cycle of the firefly system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_ac39baad2927d27c76043409ded845873}\label{OTA__LoRa__Sync_8ino_ac39baad2927d27c76043409ded845873}} 
+\mbox{\hyperlink{classOTAComms}{OTAComms}} {\bfseries ota}
+\begin{DoxyCompactList}\small\item\em An object of \mbox{\hyperlink{classOTAComms}{OTAComms}} to provide functionality for over-\/the-\/air updates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_a9b62d5b9786974152074baf3f1cc7781}\label{OTA__LoRa__Sync_8ino_a9b62d5b9786974152074baf3f1cc7781}} 
+\mbox{\hyperlink{classFirefly}{Firefly}} {\bfseries firefly}
+\begin{DoxyCompactList}\small\item\em An instance of \mbox{\hyperlink{classFirefly}{Firefly}} to simulate firefly synchronisation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{OTA__LoRa__Sync_8ino_ad17b87a66bfec5c9fbc1a298c4b93464}\label{OTA__LoRa__Sync_8ino_ad17b87a66bfec5c9fbc1a298c4b93464}} 
+\mbox{\hyperlink{classUDPHandler}{UDPHandler}} {\bfseries udp}
+\begin{DoxyCompactList}\small\item\em An object of \mbox{\hyperlink{classUDPHandler}{UDPHandler}} to provide functionality for UDP communication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file that handles all the parts to firefly synchronisation and communication with the software platform. 
+
+\begin{DoxyAuthor}{Author}
+Sean Coaker (\href{mailto:seancoaker@gmail.com}{\texttt{ seancoaker@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14-\/04-\/2022
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}

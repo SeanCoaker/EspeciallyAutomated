@@ -1,0 +1,310 @@
+\hypertarget{classSaveFormController_1_1SaveFormController}{}\doxysection{Save\+Form\+Controller.\+Save\+Form\+Controller Class Reference}
+\label{classSaveFormController_1_1SaveFormController}\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+Inheritance diagram for Save\+Form\+Controller.\+Save\+Form\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSaveFormController_1_1SaveFormController}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a1fa34741693d609ff59f7ebc63eafc90}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, $\ast$args, obj=None, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a8914005b822b22a8c20d955f24654e66}{init\+Ui\+Components}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a41386a31014de4aac0e7f85c4219667d}{show\+Add\+Record\+Button}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a61e04f858655c5c97a05c8183bad55cc}{add\+Record}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_af116fccee0e55f5de35546f75fb83fa3}{remove\+Record}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a4ff5728f5f2ea18a689feaa83f83d40d}{remove\+Add\+Record\+Button}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_ac3e69b92c5c9289de73f61aa1d3a7f9e}{update\+Add\+Record\+Button}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a36d135bd6478c1cb7301a72ce7a28927}{specify\+Result}} (self, time)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a1be1365df0543be9a816217f96f757e9}{browse\+Files}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_aa2b99717a05bd16b98134f5359a5867b}{save\+Result}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a2f1cd7ab7f30f2871b2d5fe8bd1e960b}{check\+If\+Path\+Is\+Empty}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a7a909912c41854f56fe56e4188839e15}{check\+If\+Param\+Is\+Empty}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a0c9bad9736bd49c4386d45824dccedf0}{save\+To\+File}} (self)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a78878d43b612647364e9480275107e3f}{check\+If\+Save\+To\+File\+Error}} (self, params, values, lines)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_ae97b4ba482016ff4e6f32d3b79944b99}{handle\+Save\+To\+File\+Error}} (self, error, unmatched\+Param\+Index=0, unmatched\+Line\+Index=0)
+\item 
+def \mbox{\hyperlink{classSaveFormController_1_1SaveFormController_a4f2586f30f5acd89426e0b7d3338bfcd}{get\+Saved}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a6ef97e08c3c6b54137b88ab33c99bd2e}\label{classSaveFormController_1_1SaveFormController_a6ef97e08c3c6b54137b88ab33c99bd2e}} 
+{\bfseries params}
+\item 
+\mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a5b251133921ad8a7b98220bc444c4b07}\label{classSaveFormController_1_1SaveFormController_a5b251133921ad8a7b98220bc444c4b07}} 
+{\bfseries values}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Handles the saving of a result to a log file.
+
+This function handles the saving of a result to a log file. It allows the user to dynamically 
+add parameters and their values to be saved alongside the result. Checks are carried out to 
+ensure that the data being saved is in the correct format in comparison to the format of the 
+output file. If so, the data is appended to the end of the log file.
+
+Attributes:
+    _result: The result of the timer to be saved to the log file.
+    _saved: A boolean indicating whether the result has been saved to the log file.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a1fa34741693d609ff59f7ebc63eafc90}\label{classSaveFormController_1_1SaveFormController_a1fa34741693d609ff59f7ebc63eafc90}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$}]{args,  }\item[{}]{obj = {\ttfamily None},  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialises an instance of this class.
+
+This function initialises an instance of this class and calls the user interface components to 
+be initialised.
+
+Args:
+    self: An instance of this class.
+    *args: Arguments passed to the constructor.
+    obj: An object passed to the constructor.
+    **kwargs: Keyword arguments passed to the constructor.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a61e04f858655c5c97a05c8183bad55cc}\label{classSaveFormController_1_1SaveFormController_a61e04f858655c5c97a05c8183bad55cc}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+add\+Record (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dynamically add a record to save to the file.
+
+This function dynamically adds a record to be saved to the file. Each record includes a name for 
+the parameter and its value to be saved togetherer as a pair to the log file. Each record is 
+added to the bottom of the list of records along with a remove button to allow the user to 
+dynamically remove records.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a1be1365df0543be9a816217f96f757e9}\label{classSaveFormController_1_1SaveFormController_a1be1365df0543be9a816217f96f757e9}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!browseFiles@{browseFiles}}
+\index{browseFiles@{browseFiles}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{browseFiles()}{browseFiles()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+browse\+Files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays a dialog window that allows the user to select a text file to append their result to.
+
+Displays a dialog window that allows the user to select a text file to append their result to. 
+The selected file is later checked to ensure it follows the same format as the data being saved 
+by the user.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a7a909912c41854f56fe56e4188839e15}\label{classSaveFormController_1_1SaveFormController_a7a909912c41854f56fe56e4188839e15}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!checkIfParamIsEmpty@{checkIfParamIsEmpty}}
+\index{checkIfParamIsEmpty@{checkIfParamIsEmpty}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{checkIfParamIsEmpty()}{checkIfParamIsEmpty()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+check\+If\+Param\+Is\+Empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the parameter name or its value is empty.
+        
+This function checks if the parameter name or its value is empty. If it is, an error message is 
+displayed to the user.
+
+Args:
+    self: An instance of this class.
+
+Returns:
+    True if the parameter name or its value is empty, False otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a2f1cd7ab7f30f2871b2d5fe8bd1e960b}\label{classSaveFormController_1_1SaveFormController_a2f1cd7ab7f30f2871b2d5fe8bd1e960b}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!checkIfPathIsEmpty@{checkIfPathIsEmpty}}
+\index{checkIfPathIsEmpty@{checkIfPathIsEmpty}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{checkIfPathIsEmpty()}{checkIfPathIsEmpty()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+check\+If\+Path\+Is\+Empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the path of the file to save to is empty.
+
+This function checks if the path of the file to save to is empty. If it is, an error message is 
+displayed to the user.
+
+Args:
+    self: An instance of this class.
+
+Returns:
+    True if the path is empty, False otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a78878d43b612647364e9480275107e3f}\label{classSaveFormController_1_1SaveFormController_a78878d43b612647364e9480275107e3f}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!checkIfSaveToFileError@{checkIfSaveToFileError}}
+\index{checkIfSaveToFileError@{checkIfSaveToFileError}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{checkIfSaveToFileError()}{checkIfSaveToFileError()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+check\+If\+Save\+To\+File\+Error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params,  }\item[{}]{values,  }\item[{}]{lines }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if there are any errors with the file.
+
+This function checks if there are any inconsistencies with the data being appended to the file 
+and the format of the file currently. If there are any, handleSaveToFileError is called.
+
+Args:
+    self: An instance of this class.
+    params: The parameters to be saved.
+    values: The values of the parameters to be saved.
+    lines: The lines of the file.
+
+Returns:
+    The output string to be saved to the file along with True if there were errors and False 
+    otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a4f2586f30f5acd89426e0b7d3338bfcd}\label{classSaveFormController_1_1SaveFormController_a4f2586f30f5acd89426e0b7d3338bfcd}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!getSaved@{getSaved}}
+\index{getSaved@{getSaved}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{getSaved()}{getSaved()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+get\+Saved (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns if the result has been saved or not.
+
+This function returns if the result has been saved or not.
+
+Args:
+    self: An instance of this class.
+
+Returns:
+    True if the result has been saved, False otherwise.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_ae97b4ba482016ff4e6f32d3b79944b99}\label{classSaveFormController_1_1SaveFormController_ae97b4ba482016ff4e6f32d3b79944b99}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!handleSaveToFileError@{handleSaveToFileError}}
+\index{handleSaveToFileError@{handleSaveToFileError}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{handleSaveToFileError()}{handleSaveToFileError()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+handle\+Save\+To\+File\+Error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{error,  }\item[{}]{unmatched\+Param\+Index = {\ttfamily 0},  }\item[{}]{unmatched\+Line\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensures that the correct error message is displayed to the user when a save to file error is 
+detected.
+
+This function uses the SaveError enum class to determine what the error is, and displays the 
+correct error message to the user.
+
+Args:
+    self: An instance of this class.
+    error: The error enum that was detected.
+    unmatchedParamIndex: The index of the parameter that was unmatched.
+    unmatchedLineIndex: The index of the line that was unmatched.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a8914005b822b22a8c20d955f24654e66}\label{classSaveFormController_1_1SaveFormController_a8914005b822b22a8c20d955f24654e66}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!initUiComponents@{initUiComponents}}
+\index{initUiComponents@{initUiComponents}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{initUiComponents()}{initUiComponents()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+init\+Ui\+Components (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialises the user interface components.
+        
+This function initialises the user interface components by displaying and add record button, 
+and setting the on click functions of the browse and save buttons.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a4ff5728f5f2ea18a689feaa83f83d40d}\label{classSaveFormController_1_1SaveFormController_a4ff5728f5f2ea18a689feaa83f83d40d}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!removeAddRecordButton@{removeAddRecordButton}}
+\index{removeAddRecordButton@{removeAddRecordButton}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{removeAddRecordButton()}{removeAddRecordButton()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+remove\+Add\+Record\+Button (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes the add record button from the bottom of the list of records.
+        
+This function removes the add record button from the bottom of the list of ESP devices, to 
+allow it to be added again later.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_af116fccee0e55f5de35546f75fb83fa3}\label{classSaveFormController_1_1SaveFormController_af116fccee0e55f5de35546f75fb83fa3}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!removeRecord@{removeRecord}}
+\index{removeRecord@{removeRecord}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{removeRecord()}{removeRecord()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+remove\+Record (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes a parameter and value record from the list of records.
+        
+This function removes the selected parameter and value record from the list of parameters and 
+values.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_aa2b99717a05bd16b98134f5359a5867b}\label{classSaveFormController_1_1SaveFormController_aa2b99717a05bd16b98134f5359a5867b}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!saveResult@{saveResult}}
+\index{saveResult@{saveResult}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{saveResult()}{saveResult()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+save\+Result (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves the result to the file.
+
+If the format of the file to be saved to and the format of the data being saved are the same, 
+the result is saved to the file.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a0c9bad9736bd49c4386d45824dccedf0}\label{classSaveFormController_1_1SaveFormController_a0c9bad9736bd49c4386d45824dccedf0}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+save\+To\+File (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves the data to the file if there are no errors.
+
+This function saves the parameters, their values and the result to the file if there are no 
+errors.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a41386a31014de4aac0e7f85c4219667d}\label{classSaveFormController_1_1SaveFormController_a41386a31014de4aac0e7f85c4219667d}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!showAddRecordButton@{showAddRecordButton}}
+\index{showAddRecordButton@{showAddRecordButton}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{showAddRecordButton()}{showAddRecordButton()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+show\+Add\+Record\+Button (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds the add record button to the bottom of the list of records.
+
+This function adds the add record button to the bottom of the list of paramaters, to allow the 
+user to add another record to the list. 
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_a36d135bd6478c1cb7301a72ce7a28927}\label{classSaveFormController_1_1SaveFormController_a36d135bd6478c1cb7301a72ce7a28927}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!specifyResult@{specifyResult}}
+\index{specifyResult@{specifyResult}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{specifyResult()}{specifyResult()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+specify\+Result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the result text box to display the result of the timing.
+
+This function sets the result text box to display the result of the timing.
+
+Args:
+    self: An instance of this class.
+    time: The result of the time taken.\end{DoxyVerb}
+ \mbox{\Hypertarget{classSaveFormController_1_1SaveFormController_ac3e69b92c5c9289de73f61aa1d3a7f9e}\label{classSaveFormController_1_1SaveFormController_ac3e69b92c5c9289de73f61aa1d3a7f9e}} 
+\index{SaveFormController.SaveFormController@{SaveFormController.SaveFormController}!updateAddRecordButton@{updateAddRecordButton}}
+\index{updateAddRecordButton@{updateAddRecordButton}!SaveFormController.SaveFormController@{SaveFormController.SaveFormController}}
+\doxysubsubsection{\texorpdfstring{updateAddRecordButton()}{updateAddRecordButton()}}
+{\footnotesize\ttfamily def Save\+Form\+Controller.\+Save\+Form\+Controller.\+update\+Add\+Record\+Button (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the add record button such that it is always placed below all records.
+
+This function firstly removes the add record button from the list of records, and then adds it 
+again to the bottom of the list to ensure it always remains below all records.
+
+Args:
+    self: An instance of this class.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Save\+Form\+Controller.\+py\end{DoxyCompactItemize}

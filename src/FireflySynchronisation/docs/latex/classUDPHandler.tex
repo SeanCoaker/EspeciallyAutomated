@@ -1,0 +1,42 @@
+\hypertarget{classUDPHandler}{}\doxysection{UDPHandler Class Reference}
+\label{classUDPHandler}\index{UDPHandler@{UDPHandler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUDPHandler_a121c28548a411a893d94feccde2d8047}\label{classUDPHandler_a121c28548a411a893d94feccde2d8047}} 
+{\bfseries UDPHandler} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classUDPHandler}{UDPHandler}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUDPHandler_ab5d594ea56bb72e78949fd7727e6d21e}{init}} (const char $\ast$ssid, const char $\ast$pass, unsigned int port, \mbox{\hyperlink{classFirefly}{Firefly}} $\ast$firefly)
+\begin{DoxyCompactList}\small\item\em Initialises the ESP32 Wi\+Fi module and the Wi\+Fi\+UDP object, and creates a pointer to the original \mbox{\hyperlink{classFirefly}{Firefly}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUDPHandler_a68798ea190293158625efe34945b2425}\label{classUDPHandler_a68798ea190293158625efe34945b2425}} 
+void {\bfseries handle} ()
+\begin{DoxyCompactList}\small\item\em Responds to incoming messages with the correct akcnowldegement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUDPHandler_ab5d594ea56bb72e78949fd7727e6d21e}\label{classUDPHandler_ab5d594ea56bb72e78949fd7727e6d21e}} 
+\index{UDPHandler@{UDPHandler}!init@{init}}
+\index{init@{init}!UDPHandler@{UDPHandler}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void UDPHandler\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ssid,  }\item[{const char $\ast$}]{pass,  }\item[{unsigned int}]{port,  }\item[{\mbox{\hyperlink{classFirefly}{Firefly}} $\ast$}]{firefly }\end{DoxyParamCaption})}
+
+
+
+Initialises the ESP32 Wi\+Fi module and the Wi\+Fi\+UDP object, and creates a pointer to the original \mbox{\hyperlink{classFirefly}{Firefly}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ssid} & The name of the router to connect to. \\
+\hline
+{\em pass} & The password of the router to connect to. \\
+\hline
+{\em port} & The port to use for the UDP connection. \\
+\hline
+{\em firefly} & A pointer to the \mbox{\hyperlink{classFirefly}{Firefly}} object used to provide status updates to the software platform. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{UDPHandler_8h}{UDPHandler.\+h}}\end{DoxyCompactItemize}

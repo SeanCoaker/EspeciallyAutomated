@@ -1,0 +1,25 @@
+\hypertarget{namespaceAnimatedLoadText}{}\doxysection{Animated\+Load\+Text Namespace Reference}
+\label{namespaceAnimatedLoadText}\index{AnimatedLoadText@{AnimatedLoadText}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAnimatedLoadText_1_1Loader}{Loader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A module heavily based on code from https://stackoverflow.com/questions/22029562/python-how-to-
+make-simple-animated-loading-while-process-is-running to provide animated text below the 
+progress bar during the batch upload process.
+
+This module is executed within its own thread to provide an animated loading icon to the label 
+below the progress bar in the upload dialog window. This code has been adapted slightly from 
+the code at https://stackoverflow.com/questions/22029562/python-how-to-make-simple-animated-
+loading-while-process-is-running to provide the desired solution.
+
+    Typical usage example:
+
+    self.loader = Loader(self.progressBarLabel, f'Starting {_espDevices[index]} - {ip[0]}...')
+                    .start()
+    self.loader.stop()\end{DoxyVerb}
+ 

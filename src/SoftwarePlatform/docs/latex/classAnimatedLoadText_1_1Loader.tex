@@ -1,0 +1,173 @@
+\hypertarget{classAnimatedLoadText_1_1Loader}{}\doxysection{Animated\+Load\+Text.\+Loader Class Reference}
+\label{classAnimatedLoadText_1_1Loader}\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_ae6f3cdc66e85f40ceb1643e25ab9b4e8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, output\+Box, desc=\char`\"{}Loading...\char`\"{}, end=\char`\"{}Cancelling...\char`\"{}, timeout=0.\+1)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a15e8cacd0b1b2fe268b58460bb7475a8}{start}} (self)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a13c6bc95a670c3b70441523c0e45722f}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a32e6fca220df3b351f925b370f43591d}{stop}} (self)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a4f1bb1045ce0d32fa2cac874079e5c50}{cancel}} (self)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a640462421c0156e5d488ddb21694b960}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, tb)
+\item 
+def \mbox{\hyperlink{classAnimatedLoadText_1_1Loader_a4ccb93023f3d6dfd316fc2f405c59895}{get\+Finished}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a530de29c640d25059b417ce21445e244}\label{classAnimatedLoadText_1_1Loader_a530de29c640d25059b417ce21445e244}} 
+{\bfseries desc}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_ab3b9033783865fc6ede114f785ca5b43}\label{classAnimatedLoadText_1_1Loader_ab3b9033783865fc6ede114f785ca5b43}} 
+{\bfseries end}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_acdd0001340236af2a8e4a5a748a4f589}\label{classAnimatedLoadText_1_1Loader_acdd0001340236af2a8e4a5a748a4f589}} 
+{\bfseries timeout}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a5366e33e22230fb1fe73a99917e50024}\label{classAnimatedLoadText_1_1Loader_a5366e33e22230fb1fe73a99917e50024}} 
+{\bfseries is\+Cancelled}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a45d3011ce52c4472e42d24ca54b750f1}\label{classAnimatedLoadText_1_1Loader_a45d3011ce52c4472e42d24ca54b750f1}} 
+{\bfseries steps}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_aa58912b79caadd6824b6999d805c2482}\label{classAnimatedLoadText_1_1Loader_aa58912b79caadd6824b6999d805c2482}} 
+{\bfseries done}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a6ffeae0abfaca02f6ddfdce90083837e}\label{classAnimatedLoadText_1_1Loader_a6ffeae0abfaca02f6ddfdce90083837e}} 
+{\bfseries finished}
+\item 
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a85687a7f352e4ac7df216dc5137971c9}\label{classAnimatedLoadText_1_1Loader_a85687a7f352e4ac7df216dc5137971c9}} 
+{\bfseries output\+Box}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}
+A class to provide an animated loading icon to the label below the progress bar in the upload 
+dialog window.
+
+This class is used to provide an animated loading icon to the label below the progress bar in 
+the upload dialog window.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_ae6f3cdc66e85f40ceb1643e25ab9b4e8}\label{classAnimatedLoadText_1_1Loader_ae6f3cdc66e85f40ceb1643e25ab9b4e8}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{output\+Box,  }\item[{}]{desc = {\ttfamily \char`\"{}Loading...\char`\"{}},  }\item[{}]{end = {\ttfamily \char`\"{}Cancelling...\char`\"{}},  }\item[{}]{timeout = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise the class.
+
+This function initialises the class setting the text to be displayed with the animation and the 
+text to be displayed when the animation is complete.
+
+Args:
+    outputBox (QtWidgets.QLabel): The label to display the animation and text.
+    desc (str, optional): The loading text to be displayed with the animation. Defaults to 
+        "Loading...".
+    end (str, optional): The text to be displayed when the animation is complete. Defaults to 
+        "Cancelling...".
+    timeout (float, optional): The time between each step of the animation. Defaults to 0.1.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a13c6bc95a670c3b70441523c0e45722f}\label{classAnimatedLoadText_1_1Loader_a13c6bc95a670c3b70441523c0e45722f}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calls for the animation to start.
+
+This function calls for the thread and the animation to start.
+
+Args:
+    self: The instance of the class.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a640462421c0156e5d488ddb21694b960}\label{classAnimatedLoadText_1_1Loader_a640462421c0156e5d488ddb21694b960}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc\+\_\+type,  }\item[{}]{exc\+\_\+value,  }\item[{}]{tb }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calls for the animation to stop.
+
+This function calls for the thread and the animation to stop.
+
+Args:
+    self: The instance of the class.
+    exc_type: The type of exception that was raised.
+    exc_value: The value of the exception that was raised.
+    tb: The traceback of the exception that was raised.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a4f1bb1045ce0d32fa2cac874079e5c50}\label{classAnimatedLoadText_1_1Loader_a4f1bb1045ce0d32fa2cac874079e5c50}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!cancel@{cancel}}
+\index{cancel@{cancel}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+cancel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cancels the animation.
+
+This function stops the animation by setting the isCancelled flag and done flag to True.
+
+Args:
+    self: The instance of the class.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a4ccb93023f3d6dfd316fc2f405c59895}\label{classAnimatedLoadText_1_1Loader_a4ccb93023f3d6dfd316fc2f405c59895}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!getFinished@{getFinished}}
+\index{getFinished@{getFinished}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{getFinished()}{getFinished()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+get\+Finished (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the finished flag.
+
+This function returns the finished flag.
+
+Args:
+    self: The instance of the class.
+
+Returns:
+    self.finished - The finished flag.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a15e8cacd0b1b2fe268b58460bb7475a8}\label{classAnimatedLoadText_1_1Loader_a15e8cacd0b1b2fe268b58460bb7475a8}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!start@{start}}
+\index{start@{start}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Starts the thread.
+
+This function starts the thread and begins the animated text.
+
+Args:
+    self: The instance of the class.
+
+Returns:
+    self - The instance of the class that wa spassed into the function.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classAnimatedLoadText_1_1Loader_a32e6fca220df3b351f925b370f43591d}\label{classAnimatedLoadText_1_1Loader_a32e6fca220df3b351f925b370f43591d}} 
+\index{AnimatedLoadText.Loader@{AnimatedLoadText.Loader}!stop@{stop}}
+\index{stop@{stop}!AnimatedLoadText.Loader@{AnimatedLoadText.Loader}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def Animated\+Load\+Text.\+Loader.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stops the animation.
+
+This function stops the animation by setting the done flag to True.
+
+Args:
+    self: The instance of the class.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Animated\+Load\+Text.\+py\end{DoxyCompactItemize}

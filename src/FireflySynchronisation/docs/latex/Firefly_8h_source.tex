@@ -1,0 +1,44 @@
+\hypertarget{Firefly_8h_source}{}\doxysection{Firefly.\+h}
+\mbox{\hyperlink{Firefly_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <TinyPICO.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{LoRaComms_8h}{LoRaComms.h}}"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{classFirefly}{Firefly}} \{}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} allowedToStart = \textcolor{keyword}{false};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} syncStarted = \textcolor{keyword}{false};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} packetNotDetectedCounter = 0;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} synced = \textcolor{keyword}{false};}
+\DoxyCodeLine{28     TinyPICO tp = TinyPICO();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} minBoost;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} maxBoost;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} period;}
+\DoxyCodeLine{37     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} syncWindow;}
+\DoxyCodeLine{39     \mbox{\hyperlink{classLoRaComms}{LoRaComms}} lora;}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} flashAndSendPacket();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} flashWithoutSendingPacket();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{public}:}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \mbox{\hyperlink{classFirefly_a3ac2ef7b201ae8daff40e739cefd24b1}{Firefly}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFirefly_a71f52e9e832f574b54527784fe74e27e}{init}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} minBoost, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} maxBoost, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} period, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} syncWindow);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFirefly_ab7e44eee292d283093a65b63c48df5e8}{cycle}}();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFirefly_af986eb0749740d03a11b1e44536e503a}{setAllowedToStart}}(\textcolor{keywordtype}{bool} isAllowedToStart);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFirefly_a9d1f084949962065d6099e342161db2e}{getAllowedToStart}}();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{96     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFirefly_a8ef6e0835f3bc19a3bc1df033f508dd3}{isSynced}}();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \};}
+
+\end{DoxyCode}

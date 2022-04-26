@@ -1,0 +1,73 @@
+\hypertarget{classLoRaComms}{}\doxysection{Lo\+Ra\+Comms Class Reference}
+\label{classLoRaComms}\index{LoRaComms@{LoRaComms}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLoRaComms_ad70727367f3e2305e112a34657cec9ce}\label{classLoRaComms_ad70727367f3e2305e112a34657cec9ce}} 
+{\bfseries Lo\+Ra\+Comms} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Lo\+Ra Comms object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoRaComms_ad684ab5807b5d2d4f0018bd676f14611}{init}} (int tx\+Power, int sync\+Word, uint32\+\_\+t spi\+Freq, long frequency, int CS)
+\begin{DoxyCompactList}\small\item\em Initialises the Lo\+Ra module and Lo\+Ra library with the specified parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLoRaComms_a0a5e02087e4161634e241d8b2c60ddb7}{is\+Packet\+Detected}} ()
+\begin{DoxyCompactList}\small\item\em Return if a packet is available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoRaComms_a6cf68914c8725397a5e0f46610a819f4}{broadcast\+Message}} (String message)
+\begin{DoxyCompactList}\small\item\em Broadcast a message containing the specified data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoRaComms_a6cf68914c8725397a5e0f46610a819f4}\label{classLoRaComms_a6cf68914c8725397a5e0f46610a819f4}} 
+\index{LoRaComms@{LoRaComms}!broadcastMessage@{broadcastMessage}}
+\index{broadcastMessage@{broadcastMessage}!LoRaComms@{LoRaComms}}
+\doxysubsubsection{\texorpdfstring{broadcastMessage()}{broadcastMessage()}}
+{\footnotesize\ttfamily void Lo\+Ra\+Comms\+::broadcast\+Message (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})}
+
+
+
+Broadcast a message containing the specified data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to broadcast. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoRaComms_ad684ab5807b5d2d4f0018bd676f14611}\label{classLoRaComms_ad684ab5807b5d2d4f0018bd676f14611}} 
+\index{LoRaComms@{LoRaComms}!init@{init}}
+\index{init@{init}!LoRaComms@{LoRaComms}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Lo\+Ra\+Comms\+::init (\begin{DoxyParamCaption}\item[{int}]{tx\+Power,  }\item[{int}]{sync\+Word,  }\item[{uint32\+\_\+t}]{spi\+Freq,  }\item[{long}]{frequency,  }\item[{int}]{CS }\end{DoxyParamCaption})}
+
+
+
+Initialises the Lo\+Ra module and Lo\+Ra library with the specified parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx\+Power} & The Lo\+Ra module output power. \\
+\hline
+{\em sync\+Word} & The sync word used to ensure that packets can only be read from Lo\+Ra modules using the same sync word. \\
+\hline
+{\em spi\+Freq} & The frequency of the SPI communication between the Tiny\+PICO. \\
+\hline
+{\em frequency} & The frequency of the Lo\+Ra communication. \\
+\hline
+{\em CS} & The select pin connected from the Tiny\+PICO to the Lo\+Ra module. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoRaComms_a0a5e02087e4161634e241d8b2c60ddb7}\label{classLoRaComms_a0a5e02087e4161634e241d8b2c60ddb7}} 
+\index{LoRaComms@{LoRaComms}!isPacketDetected@{isPacketDetected}}
+\index{isPacketDetected@{isPacketDetected}!LoRaComms@{LoRaComms}}
+\doxysubsubsection{\texorpdfstring{isPacketDetected()}{isPacketDetected()}}
+{\footnotesize\ttfamily bool Lo\+Ra\+Comms\+::is\+Packet\+Detected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return if a packet is available. 
+
+\begin{DoxyReturn}{Returns}
+true if a message was received, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LoRaComms_8h}{Lo\+Ra\+Comms.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{classFirefly}{}\doxysection{Firefly Class Reference}
+\label{classFirefly}\index{Firefly@{Firefly}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFirefly_a3ac2ef7b201ae8daff40e739cefd24b1}\label{classFirefly_a3ac2ef7b201ae8daff40e739cefd24b1}} 
+{\bfseries Firefly} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFirefly}{Firefly}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFirefly_a71f52e9e832f574b54527784fe74e27e}{init}} (unsigned int min\+Boost, unsigned int max\+Boost, unsigned int period, unsigned int sync\+Window)
+\begin{DoxyCompactList}\small\item\em Initialise the \mbox{\hyperlink{classFirefly}{Firefly}} object with the necessary clock period, boost range, and sync window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFirefly_ab7e44eee292d283093a65b63c48df5e8}\label{classFirefly_ab7e44eee292d283093a65b63c48df5e8}} 
+void {\bfseries cycle} ()
+\begin{DoxyCompactList}\small\item\em A function that cycles through the firefly\textquotesingle{}s clock and handles the boosting of the clock when Lo\+Ra messages are detected. This function also calls for the flashing functions when the end of the clock cycle is reached. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFirefly_af986eb0749740d03a11b1e44536e503a}{set\+Allowed\+To\+Start}} (bool is\+Allowed\+To\+Start)
+\begin{DoxyCompactList}\small\item\em Set the value of the allowed\+To\+Start variable. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFirefly_a9d1f084949962065d6099e342161db2e}{get\+Allowed\+To\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Get the value of allowed\+To\+Start. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFirefly_a8ef6e0835f3bc19a3bc1df033f508dd3}{is\+Synced}} ()
+\begin{DoxyCompactList}\small\item\em Return if the firefly has synchronised with its neighbours or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFirefly_a9d1f084949962065d6099e342161db2e}\label{classFirefly_a9d1f084949962065d6099e342161db2e}} 
+\index{Firefly@{Firefly}!getAllowedToStart@{getAllowedToStart}}
+\index{getAllowedToStart@{getAllowedToStart}!Firefly@{Firefly}}
+\doxysubsubsection{\texorpdfstring{getAllowedToStart()}{getAllowedToStart()}}
+{\footnotesize\ttfamily bool Firefly\+::get\+Allowed\+To\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the value of allowed\+To\+Start. 
+
+\begin{DoxyReturn}{Returns}
+true if allowed to start, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFirefly_a71f52e9e832f574b54527784fe74e27e}\label{classFirefly_a71f52e9e832f574b54527784fe74e27e}} 
+\index{Firefly@{Firefly}!init@{init}}
+\index{init@{init}!Firefly@{Firefly}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Firefly\+::init (\begin{DoxyParamCaption}\item[{unsigned int}]{min\+Boost,  }\item[{unsigned int}]{max\+Boost,  }\item[{unsigned int}]{period,  }\item[{unsigned int}]{sync\+Window }\end{DoxyParamCaption})}
+
+
+
+Initialise the \mbox{\hyperlink{classFirefly}{Firefly}} object with the necessary clock period, boost range, and sync window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Boost} & The minimum amount to boost the firefly\textquotesingle{}s clock by. \\
+\hline
+{\em max\+Boost} & The maximum amount to boost the firefly\textquotesingle{}s clock by. \\
+\hline
+{\em period} & The length of the clock cycle. \\
+\hline
+{\em sync\+Window} & The size of the window from the end of the clock cycle that can be determined as the firefly being in sync. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFirefly_a8ef6e0835f3bc19a3bc1df033f508dd3}\label{classFirefly_a8ef6e0835f3bc19a3bc1df033f508dd3}} 
+\index{Firefly@{Firefly}!isSynced@{isSynced}}
+\index{isSynced@{isSynced}!Firefly@{Firefly}}
+\doxysubsubsection{\texorpdfstring{isSynced()}{isSynced()}}
+{\footnotesize\ttfamily bool Firefly\+::is\+Synced (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return if the firefly has synchronised with its neighbours or not. 
+
+\begin{DoxyReturn}{Returns}
+true if the firefly has synchronised with its neighbours, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFirefly_af986eb0749740d03a11b1e44536e503a}\label{classFirefly_af986eb0749740d03a11b1e44536e503a}} 
+\index{Firefly@{Firefly}!setAllowedToStart@{setAllowedToStart}}
+\index{setAllowedToStart@{setAllowedToStart}!Firefly@{Firefly}}
+\doxysubsubsection{\texorpdfstring{setAllowedToStart()}{setAllowedToStart()}}
+{\footnotesize\ttfamily void Firefly\+::set\+Allowed\+To\+Start (\begin{DoxyParamCaption}\item[{bool}]{is\+Allowed\+To\+Start }\end{DoxyParamCaption})}
+
+
+
+Set the value of the allowed\+To\+Start variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Allowed\+To\+Start} & Whether the synchronisation process is allowed to start. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Firefly_8h}{Firefly.\+h}}\end{DoxyCompactItemize}

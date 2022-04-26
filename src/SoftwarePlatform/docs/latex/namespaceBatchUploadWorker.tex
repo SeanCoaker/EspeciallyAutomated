@@ -1,0 +1,39 @@
+\hypertarget{namespaceBatchUploadWorker}{}\doxysection{Batch\+Upload\+Worker Namespace Reference}
+\label{namespaceBatchUploadWorker}\index{BatchUploadWorker@{BatchUploadWorker}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classBatchUploadWorker_1_1BatchUploadWorker}{Batch\+Upload\+Worker}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module acts as the worker class to perform the batch upload and timing of synchronisation 
+of an Arduino sketch to ESP devices.
+
+Once this module has been instantiated by the upload dialog, the upload process is started in 
+a separate thread to the user interface thread. This worker class is responsible for 
+performing the upload process and feeding information back to the UploadDialogController to 
+ensure that the user is notified of the progress of the upload and timing process.
+
+    Typical usage example:
+
+    self.thread = QThread()
+    self.worker = BatchUploadWorker(self.progressBarLabel, _espIps, _espDevices, _ipOfSender, 
+                    int(_udpPort), int(_otaPort), _sketchPath, _sketchDirectory, _isTimed, 
+                        _isVerbose)
+
+    self.worker.moveToThread(self.thread)
+
+    self.thread.started.connect(self.worker.runUpload)
+    self.worker.finished.connect(self.finished)
+    self.worker.finished.connect(self.thread.quit)
+    self.worker.finished.connect(self.worker.deleteLater)
+    self.thread.finished.connect(self.thread.deleteLater)
+    self.worker.timerStart.connect(self.startTimer)
+    self.worker.timerStop.connect(self.stopTimer)
+    self.worker.progressUpdate.connect(self.updateProgressBar)
+    self.worker.labelUpdate.connect(self.updateDebugLabel)
+    self.worker.outputUpdate.connect(self.updateOutputBox)
+\end{DoxyVerb}
+ 
