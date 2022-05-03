@@ -79,10 +79,8 @@ systems networks.
 
 **Next Steps:**
 
-```
 Excited to get started?
-Click here for the Quick Start Guide or head to section 2
-```
+Head to section 2 for the Quick Start Guide.
 
 ## 2 Quick Start Guide
 
