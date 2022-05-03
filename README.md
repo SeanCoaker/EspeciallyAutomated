@@ -145,7 +145,21 @@ ota.handle();
 **UDP message handling**
 To allow the ESP32 devices to be pinged and to allow their states to be checked by the software platform, you will need to include the files EspeciallyAutomated/src/NecessaryArduinoLibs/UDPHandler.h and UDPHandler.cpp within the same directory as your Arduino sketch. When this is complete, you can follow these steps to implement code which configures the UDPHandler class and checks for incoming UDP messages.
 
-1. (Optional) If you are wanting to use the software platform’s timing feature, within the handle() function of UDPHandler.cpp, replace the comment in the code below with the code that you wish to be carried out when the device starts.
+1. To allow your ESP devices to respond to incoming ping messages with an acknowledgement, you must inlcude the following snippet of code within the handle() function of the UDPHandler.cpp file. Including code on the ESP device that responds to ping messages is imperative to ensuring that the batch uploading system is fully functional.
+
+```
+if (packet_string == "Ping") {
+
+    this->udp.beginPacket(remoteIp, remotePort);
+    this->udp.print("Received");
+    this->udp.endPacket();
+          
+    // Code to be executed when ping is received.
+
+} 
+```
+
+2. (Optional) If you are wanting to use the software platform’s timing feature, within the handle() function of UDPHandler.cpp, replace the comment in the code below with the code that you wish to be carried out when the device starts.
 
 ```
 } else if (packet_string == "Start") {
@@ -158,7 +172,7 @@ To allow the ESP32 devices to be pinged and to allow their states to be checked 
 }
 ```
 
-2. (Optional) If you are wanting to use the software platform’s timing feature, within the handle() function of UDPHandler.cpp, replace the commented if condition in the code below with the code that you wish to be carried out when the device has converged.
+3. (Optional) If you are wanting to use the software platform’s timing feature, within the handle() function of UDPHandler.cpp, replace the commented if condition in the code below with the code that you wish to be carried out when the device has converged.
 
 ```
 } else if (packet_string == "Sync") {
@@ -174,7 +188,7 @@ To allow the ESP32 devices to be pinged and to allow their states to be checked 
 }
 ```
 
-3. Add the following line of code into the preamble of your sketch .ino file. This define directive is changed with the name of the ESP32 device set in the Especially Automated software platform later on. Thus, each ESP32 device will be assigned their own individual name and DNS. Replace "esp1" below with a standard name for an ESP32 device. The DNS of this device will become name-you-assign.local. So for the example provided below, the DNS name of the ESP32 device would be esp1.local.
+4. Add the following line of code into the preamble of your sketch .ino file. This define directive is changed with the name of the ESP32 device set in the Especially Automated software platform later on. Thus, each ESP32 device will be assigned their own individual name and DNS. Replace "esp1" below with a standard name for an ESP32 device. The DNS of this device will become name-you-assign.local. So for the example provided below, the DNS name of the ESP32 device would be esp1.local.
 
 ```
 #define DNS "esp1"
@@ -182,13 +196,13 @@ To allow the ESP32 devices to be pinged and to allow their states to be checked 
 
 Make sure to assign a different DNS string for each ESP32 device you are uploading to and remember the names you set. You will need these DNS names to be able to upload the sketches from the Especially Automated software platform later on.
 
-4. Include the following code in your setup() function, replacing ’SSID’ with the SSID of the router you will be using to upload the sketches, ’PASSWORD’ with the password needed to connect to that router, and ’UDP_PORT’ with your desired port for UDP communication between the software platform and ESP device(s).
+5. Include the following code in your setup() function, replacing ’SSID’ with the SSID of the router you will be using to upload the sketches, ’PASSWORD’ with the password needed to connect to that router, and ’UDP_PORT’ with your desired port for UDP communication between the software platform and ESP device(s).
 
 ```
 udp.init(SSID, PASSWORD, UDP_PORT);
 ```
 
-5. Include the following code in your loop() function, allowing for your device to keep checking for over-the-air upload requests.
+6. Include the following code in your loop() function, allowing for your device to keep checking for over-the-air upload requests.
 
 ```
 ota.handle();
