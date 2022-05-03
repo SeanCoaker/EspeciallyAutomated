@@ -750,105 +750,71 @@ synchronised, depending on the use case of the firefly syncrhonisation system.
 
 ## 3 Troubleshooting
 
-The following chapter includes troubleshooting details for both the Especially Auto-
-mated software platform and the firefly synchronisation system.
+The following chapter includes troubleshooting details for both the Especially Automated software platform and the firefly synchronisation system.
 
 ### 3.1 Software platform
 
-This section includes all the relevant troubleshooting information for the various
-errors that can be experienced throughout the use of the software platform. Trou-
-bleshooting for the software platform will be split into sub sections for each feature
-of the software to allow the user to be able to quickly identify the troubleshooting
-steps for the particular issue they are facing.
+This section includes all the relevant troubleshooting information for the various errors that can be experienced throughout the use of the software platform. Troubleshooting for the software platform will be split into sub sections for each feature of the software to allow the user to be able to quickly identify the troubleshooting steps for the particular issue they are facing.
 
 #### 3.1.1 Upload configuration errors
 
 - **"Field must not be empty."**
-    The user must ensure that a field within the main upload window cannot be left
-    blank when attempting to upload a sketch to ESP32 devices. Please ensure
-    that all fields are filled before attempting to start the upload process.
+    The user must ensure that a field within the main upload window cannot be left blank when attempting to upload a sketch to ESP32 devices. Please ensure that all fields are filled before attempting to start the upload process.
 
 #### 3.1.2 Upload process errors
 
 - **"Pinging ESP_IP_Address Failed"**
 This states that a message has been sent to the specified ESP device’s IP address, but an acknowledgement has not been received. The following troubleshooting steps can be followed to attempt to resolve this.
+
    - Make sure that the device you are trying to ping is powered on.
    - Ensure that you are connected to the same router as the ESP devices.
    - Check that the IP address you are attempting to ping is the correct IP address.
    - Make sure that code to respond to ping messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
-
-
-**-** Attempts to ping the ESP device may have reached the exceeded amount,
-    try uploading again.
+   - Attempts to ping the ESP device may have reached the exceeded amount, try uploading again.
+   - 
 - **"Sketch Upload to ESP_Name - ESP_IP_Address Failed"**
 
-```
-This states that the process of uploading the sketch to the specified ESP device
-has failed. The following troubleshooting steps can be followed to attempt to
-resolve this.
-```
-**-** Make sure that the device you are trying to upload to is powered on.
-**-** Ensure that you are connected to the same router as the ESP devices.
-**-** Check that the IP address of the device you are attempting to upload the
-    sketch to is the correct IP address.
-**-** Make sure that code to respond to over-the-air upload requests are in-
-    cluded within the sketch uploaded to your ESP devices. Further informa-
-    tion on how to create Especially Automated compatible Arduino sketches
-    can be seen in section 2.4.1.3.
-**-** Attempts to upload the sketch to the ESP device may have reached the
-    exceeded amount, try uploading again.
+This states that the process of uploading the sketch to the specified ESP device has failed. The following troubleshooting steps can be followed to attempt to resolve this.
+
+   - Make sure that the device you are trying to upload to is powered on.
+   - Ensure that you are connected to the same router as the ESP devices.
+   - Check that the IP address of the device you are attempting to upload the sketch to is the correct IP address.
+   - Make sure that code to respond to over-the-air upload requests are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
+   - Attempts to upload the sketch to the ESP device may have reached the exceeded amount, try uploading again.
     
 - **"Starting ESP_Name - ESP_IP_Address Failed"**
 
-The software platform has failed in its attempts to start the coding system
-within the sketch that has been uploaded to the ESP device(s). The following
-troubleshooting steps can be followed to attempt to resolve this.
+The software platform has failed in its attempts to start the coding system within the sketch that has been uploaded to the ESP device(s). The following troubleshooting steps can be followed to attempt to resolve this.
 
-- Make sure that the device you are trying to start is powered on.
-- Ensure that you are connected to the same router as the ESP devices.
-- Check that the IP address of the device you are attempting to start is the correct IP address.
-- Make sure that code to respond to start messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
-- Ensure that the name of the ESP device to start matches the text prefixes the .local of the device’s IP address if a DNS name is being used.
-- Attempts to start the ESP device may have reached the exceeded amount, try uploading again.
+   - Make sure that the device you are trying to start is powered on.
+   - Ensure that you are connected to the same router as the ESP devices.
+   - Check that the IP address of the device you are attempting to start is the correct IP address.
+   - Make sure that code to respond to start messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
+   - Ensure that the name of the ESP device to start matches the text prefixes the .local of the device’s IP address if a DNS name is being used.
+   - Attempts to start the ESP device may have reached the exceeded amount, try uploading again.
     
 - **Convergence timing not concluding**
 
-This issue is caused when a "Done" message is not received by the software
-platform from each ESP device being timed. The following troubleshooting
-steps can be followed to attempt to resolve this.
+This issue is caused when a "Done" message is not received by the software platform from each ESP device being timed. The following troubleshooting steps can be followed to attempt to resolve this.
 
-- Make sure that all ESP devices are powered on.
-- Ensure that you are connected to the same router as the ESP devices.
-- Check that the IP addresses of all the devices you are trying to communicate with are correct.
-- Make sure that code to respond to convergence messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
-- Check your uploaded sketch for bugs that stops the system from completing and ultimately sending a "Done" message back to the software platform.
+   - Make sure that all ESP devices are powered on.
+   - Ensure that you are connected to the same router as the ESP devices.
+   - Check that the IP addresses of all the devices you are trying to communicate with are correct.
+   - Make sure that code to respond to convergence messages are included within the sketch uploaded to your ESP devices. Further information on how to   create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
+   - Check your uploaded sketch for bugs that stops the system from completing and ultimately sending a "Done" message back to the software platform.
 
 #### 3.1.3 Save result errors
 
 - **"ERROR: Path must not be empty."**
-    This error is displayed when a log file is not selected to save the result and
-    parameters to. Please ensure that a log file is selected.
+    This error is displayed when a log file is not selected to save the result and parameters to. Please ensure that a log file is selected.
 - **"Field must not be empty."**
-    Displayed when a parameter name or parameter value field have been left
-    blank, this error can be fixed by ensuring that no empty fields are visible when
-    attempting to save a result.
+    Displayed when a parameter name or parameter value field have been left blank, this error can be fixed by ensuring that no empty fields are visible when attempting to save a result.
 - **"Number of parameters do not match length of line n."**
-    This error is displayed when the number of parameters you are attempting to
-    save along with the result does not match the number of parameters saved at
-    line n in the log file. Avoid this issue by ensuring all lines of the file store the
-    same parameters and that those parameters are matched in the data you are
-    attempting to save.
+    This error is displayed when the number of parameters you are attempting to save along with the result does not match the number of parameters saved at line n in the log file. Avoid this issue by ensuring all lines of the file store the same parameters and that those parameters are matched in the data you are attempting to save.
 - **"Param not in log file, line n."**
-    Displayed when the order of parameters being saved does not match the order
-    of parameters in line n of the log file, this error can be fixed by ensuring that
-    the order of parameters in all lines of the log file match each other, and that
-    the order of the parameters being saved matches the order of parameters in
-    the log file.
+    Displayed when the order of parameters being saved does not match the order of parameters in line n of the log file, this error can be fixed by ensuring that the order of parameters in all lines of the log file match each other, and that the order of the parameters being saved matches the order of parameters in the log file.
 - **"Result not found in line n."**
-    This error is displayed when a line in the log file being saved to does not contain
-    ’RESULT’ as its final parameter. This can be fixed by either deleting this line or
-    by manually adding a ’RESULT’ parameter and its corresponding value to the
-    end of line n.
+    This error is displayed when a line in the log file being saved to does not contain ’RESULT’ as its final parameter. This can be fixed by either deleting this line or by manually adding a ’RESULT’ parameter and its corresponding value to the end of line n.
 
 
 #### 3.1.4 Load results errors
@@ -856,19 +822,13 @@ steps can be followed to attempt to resolve this.
 - **"File is empty."**
     Please ensure that the log file you are trying to view the charts of is not empty.
 - **"RESULT parameter should appear last on Line n."**
-    This error is displayed when the last parameter of line n is not ’RESULT’ in the
-    log file. Fix this issue by either deleting line n or by setting the last parameter
-    to be ’RESULT’ and its corresponding value.
+    This error is displayed when the last parameter of line n is not ’RESULT’ in the log file. Fix this issue by either deleting line n or by setting the last parameter to be ’RESULT’ and its corresponding value.
 - **"Number of parameters in Line n does not match Line 1."**
-    This error can be solved by ensuring that the number of parameters in line n
-    matches the number of parameters contained in line 1 of the log file.
+    This error can be solved by ensuring that the number of parameters in line n matches the number of parameters contained in line 1 of the log file.
 - **"A parameter in Line n does not match the parameters in Line 1."**
-    Displayed when a parameter in line n does not match the parameter at the
-    same index in line 1, this error can be solved by ensuring that all parameters in
-    line n match all parameters in line 1.
+    Displayed when a parameter in line n does not match the parameter at the same index in line 1, this error can be solved by ensuring that all parameters in line n match all parameters in line 1.
 - **"Value of a parameter in Line n is not a float."**
-    This error can be solved by ensuring that all values associated with all parame-
-    ters within the selected log file are in numerical form.
+    This error can be solved by ensuring that all values associated with all parameters within the selected log file are in numerical form.
 
 
 ## Bibliography
