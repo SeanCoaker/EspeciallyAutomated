@@ -682,18 +682,16 @@ and what changes can be made to effect the whole firefly system.
     causing the nodes to remain in an asynchronous state. The code for this can
     be found in the cycle() function of the Firefly.cpp file and can also be seen
     below:
+   
+    int boost = std::rand() % (this->maxBoost -
+            this->minBoost + 1) + this->minBoost;
 
+    if (counter < this ->period / 2) {
+        counter -= boost;
+    } else {
+        counter += boost;
+    }
         
-        int boost = std::rand() % (this->maxBoost -
-                this->minBoost + 1) + this->minBoost;
-
-        if (counter < this ->period / 2) {
-            counter -= boost;
-        } else {
-            counter += boost;
-        }
-        
-
     Experimentation could take place with this block of code to attempt to re-
     move the need for random boost values. This could create a more efficient
     and more predictable synchronisation system, potentially improving the ef-
@@ -712,10 +710,8 @@ and what changes can be made to effect the whole firefly system.
     The line of code that blocks the system for a specific number of microseconds
     can be seen below:
 
-        
-        delayMicroseconds(50);
+    delayMicroseconds(50);
          
-
 - Synchronisation detection:
     The final recommended feature to be experimented with is the synchronisation
     detection feature included in the cycle() function of the Firefly.cpp file. The
@@ -726,18 +722,16 @@ and what changes can be made to effect the whole firefly system.
     detect neighbouring LoRa messages cannot be classed as synchronised with
     the network in this current system. The code for synchronisation detection can
     be viewed below:
+ 
+    if (!boosted && this ->syncStarted && this ->allowedToStart) {
+        packetNotDetectedCounter++;
+    }
 
+    if ( this ->packetNotDetectedCounter == 2
+            && this ->allowedToStart) {
+        synced = true;
+    }
         
-        if (!boosted && this ->syncStarted && this ->allowedToStart) {
-            packetNotDetectedCounter++;
-        }
-
-        if ( this ->packetNotDetectedCounter == 2
-                && this ->allowedToStart) {
-            synced = true;
-        }
-        
-
     The code listing above firstly runs a check to see if the firefly clock has not been boosted due to a received LoRa message, a check to see if synchronisation has started where an initial LoRa message had previously been detected, and a check to see if the synchronisation system is allowed to start (it is only allowed to start when a start UDP message is received from the Especially Automated software platform). If all of these checks hold true then the packetNotDetectedCounter is incremented. In the instance that this counter reaches a value of 2, the system is deemed as synchronised and a message can be returned to the software platform stating that this particular node has synchronised with its neighbours.
 
 Experimentation here could include work to reset the counter each time a
