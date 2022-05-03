@@ -771,17 +771,11 @@ steps for the particular issue they are facing.
 #### 3.1.2 Upload process errors
 
 - **"Pinging ESP_IP_Address Failed"**
-    This states that a message has been sent to the specified ESP device’s IP
-    address, but an acknowledgement has not been received. The following trou-
-    bleshooting steps can be followed to attempt to resolve this.
-       **-** Make sure that the device you are trying to ping is powered on.
-       **-** Ensure that you are connected to the same router as the ESP devices.
-       **-** Check that the IP address you are attempting to ping is the correct IP
-          address.
-       **-** Make sure that code to respond to ping messages are included within
-          the sketch uploaded to your ESP devices. Further information on how to
-          create Especially Automated compatible Arduino sketches can be seen in
-          section 2.4.1.3.
+This states that a message has been sent to the specified ESP device’s IP address, but an acknowledgement has not been received. The following troubleshooting steps can be followed to attempt to resolve this.
+   - Make sure that the device you are trying to ping is powered on.
+   - Ensure that you are connected to the same router as the ESP devices.
+   - Check that the IP address you are attempting to ping is the correct IP address.
+   - Make sure that code to respond to ping messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
 
 
 **-** Attempts to ping the ESP device may have reached the exceeded amount,
