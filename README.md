@@ -28,13 +28,6 @@
       - 3.1.2 Upload process errors
       - 3.1.3 Save result errors
       - 3.1.4 Load results errors
-- 2.1 Upload window on launch of software
-- 2.2 Upload dialog during the upload and timing process
-- 2.3 Button to save the timing result
-- 2.4 Save result dialog
-- 2.5 Results screen with matplotlib charts
-- 2.6 TinyPICO Pinouts
-- 2.7 RFM95 Pinouts
 
 
 ## 1 Welcome
