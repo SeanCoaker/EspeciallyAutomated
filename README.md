@@ -803,44 +803,31 @@ resolve this.
     can be seen in section 2.4.1.3.
 **-** Attempts to upload the sketch to the ESP device may have reached the
     exceeded amount, try uploading again.
+    
 - **"Starting ESP_Name - ESP_IP_Address Failed"**
 
-```
 The software platform has failed in its attempts to start the coding system
 within the sketch that has been uploaded to the ESP device(s). The following
 troubleshooting steps can be followed to attempt to resolve this.
-```
-**-** Make sure that the device you are trying to start is powered on.
-**-** Ensure that you are connected to the same router as the ESP devices.
-**-** Check that the IP address of the device you are attempting to start is the
-    correct IP address.
-**-** Make sure that code to respond to start messages are included within
-    the sketch uploaded to your ESP devices. Further information on how to
-    create Especially Automated compatible Arduino sketches can be seen in
-    section 2.4.1.3.
-**-** Ensure that the name of the ESP device to start matches the text prefixes
-    the .local of the device’s IP address if a DNS name is being used.
-**-** Attempts to start the ESP device may have reached the exceeded amount,
-    try uploading again.
+
+- Make sure that the device you are trying to start is powered on.
+- Ensure that you are connected to the same router as the ESP devices.
+- Check that the IP address of the device you are attempting to start is the correct IP address.
+- Make sure that code to respond to start messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
+- Ensure that the name of the ESP device to start matches the text prefixes the .local of the device’s IP address if a DNS name is being used.
+- Attempts to start the ESP device may have reached the exceeded amount, try uploading again.
+    
 - **Convergence timing not concluding**
 
-```
 This issue is caused when a "Done" message is not received by the software
 platform from each ESP device being timed. The following troubleshooting
 steps can be followed to attempt to resolve this.
-```
 
-**-** Make sure that all ESP devices are powered on.
-**-** Ensure that you are connected to the same router as the ESP devices.
-**-** Check that the IP addresses of all the devices you are trying to communi-
-    cate with are correct.
-**-** Make sure that code to respond to convergence messages are included
-    within the sketch uploaded to your ESP devices. Further information on
-    how to create Especially Automated compatible Arduino sketches can be
-    seen in section 2.4.1.3.
-**-** Check your uploaded sketch for bugs that stops the system from com-
-    pleting and ultimately sending a "Done" message back to the software
-    platform.
+- Make sure that all ESP devices are powered on.
+- Ensure that you are connected to the same router as the ESP devices.
+- Check that the IP addresses of all the devices you are trying to communicate with are correct.
+- Make sure that code to respond to convergence messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
+- Check your uploaded sketch for bugs that stops the system from completing and ultimately sending a "Done" message back to the software platform.
 
 #### 3.1.3 Save result errors
 
