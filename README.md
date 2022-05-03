@@ -771,9 +771,8 @@ This states that a message has been sent to the specified ESP device’s IP addr
    - Check that the IP address you are attempting to ping is the correct IP address.
    - Make sure that code to respond to ping messages are included within the sketch uploaded to your ESP devices. Further information on how to create Especially Automated compatible Arduino sketches can be seen in section 2.4.1.3.
    - Attempts to ping the ESP device may have reached the exceeded amount, try uploading again.
-   - 
-- **"Sketch Upload to ESP_Name - ESP_IP_Address Failed"**
 
+- **"Sketch Upload to ESP_Name - ESP_IP_Address Failed"**
 This states that the process of uploading the sketch to the specified ESP device has failed. The following troubleshooting steps can be followed to attempt to resolve this.
 
    - Make sure that the device you are trying to upload to is powered on.
