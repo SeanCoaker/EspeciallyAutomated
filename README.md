@@ -782,7 +782,6 @@ This states that the process of uploading the sketch to the specified ESP device
    - Attempts to upload the sketch to the ESP device may have reached the exceeded amount, try uploading again.
     
 - **"Starting ESP_Name - ESP_IP_Address Failed"**
-
 The software platform has failed in its attempts to start the coding system within the sketch that has been uploaded to the ESP device(s). The following troubleshooting steps can be followed to attempt to resolve this.
 
    - Make sure that the device you are trying to start is powered on.
@@ -793,7 +792,6 @@ The software platform has failed in its attempts to start the coding system with
    - Attempts to start the ESP device may have reached the exceeded amount, try uploading again.
     
 - **Convergence timing not concluding**
-
 This issue is caused when a "Done" message is not received by the software platform from each ESP device being timed. The following troubleshooting steps can be followed to attempt to resolve this.
 
    - Make sure that all ESP devices are powered on.
