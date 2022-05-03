@@ -1,12 +1,4 @@
-# Especially Automated
-
-# User Manual
-
-## Version 1.0
-
-## Sean Coaker
-
-May 3, 2022
+# Especially Automated - User Manual
 
 ## Contents
 
