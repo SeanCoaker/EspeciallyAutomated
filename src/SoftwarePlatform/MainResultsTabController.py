@@ -221,7 +221,7 @@ class MainResultsTabController():
             self._ui.loadErrorLabel.setText(f'Number of parameters in Line {lineNum} does not match Line 1.')
 
         elif error == LoadError.PARAM_MATCH_ERROR:
-            self._ui.loadErrorLabel.setText(f'A parameter in Line {lineNum} does not match the parameters Line 1.')
+            self._ui.loadErrorLabel.setText(f'A parameter in Line {lineNum} does not match the parameters in Line 1.')
 
         elif error == LoadError.PARAM_FLOAT_ERROR:
             self._ui.loadErrorLabel.setText(f'Value of a parameter in Line {lineNum} is not a float.')
@@ -406,7 +406,7 @@ class MainResultsTabController():
             if self._selectedParams[param] == True:
                 figure = Figure(figsize=(1,1), tight_layout=False)
                 ax = figure.add_subplot(111)
-                x = self._paramValueMap[param]
+                x = [float(x) for x in self._paramValueMap[param]]
                 ax.scatter(x, y)
                 ax.title.set_text(f'{param} to Result')
                 ax.set_xlabel(param)

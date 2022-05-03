@@ -39,7 +39,7 @@ UDPHandler udp;
 void setup() {
 
     Serial.begin(115200);
-    firefly.init(200, 2500, 100000, 1000);
+    firefly.init(200, 3500, 75000, 1000);
     udp.init(SSID, PASSWORD, UDP_PORT, &firefly);
     ota.init(OTA_PORT, DNS);
     ota.begin();

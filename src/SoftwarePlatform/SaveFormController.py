@@ -388,4 +388,4 @@ class SaveFormController(QtWidgets.QDialog, Ui_Dialog):
 			True if the result has been saved, False otherwise.
 		"""
 
-		return _saved
+		return self._saved
